@@ -1,0 +1,80 @@
+/* COLOUR VARIABLES */
+
+:root {
+	--dark-color: #474747;
+	--light-color: #D8D8D8;
+	--brand-color-primary: #FFD100;
+	--brand-color-primary-dark: #F4C700;
+	--brand-color-primary-light: #FED939;
+	--brand-color-secondary: #FF5A00;
+	--brand-color-secondary-dark: #CC4700;
+	--brand-color-secondary-light: #FF7328;
+
+/* Type colour variables */
+	--selection: #ffb7b7;
+	--link: #ffb7b7;
+	--link-hover: #ffb7b7;
+
+/* Shadow variables */
+
+/*	FONT VARIABLES
+
+	serif
+	sans
+	code
+	large
+	medium
+	normal
+	small
+*/
+}
+
+
+/* DEFAULTS / RESET */
+
+*, *::before, *::after {box-sizing: border-box;}
+html {font-family: 'Montserrat', sans-serif;color: var(--dark-color);-webkit-text-size-adjust: none;text-size-adjust: none;}
+body {margin:0;}
+p
+h1, h2, h3, h4, h5
+menu, ol, ul {padding-left: 0;}
+menu:not(article menu), ol:not(article ol), ul:not(article ul) {list-style: none;}
+article ol, article ul {list-style-position: inside;}
+a {text-underline-position: under;text-decoration-thickness: 8;color: var(--brand-color-secondary);}
+img {display: block;max-width: 100%;}
+@media (prefers-reduced-motion: no-preference) {html {scroll-behavior: smooth;}}
+/* :focus:not(:focus-visible) {outline: none;} DOES THIS WORK */
+label, button, select, summary, [type=radio], [type=submit], [type=checkbox] {cursor: pointer;}
+
+
+/* UTILITIES */
+
+.nobullets {list-style: none;margin: 0;padding: 0;}
+/* margins, padding, font sizes, serifs, colours, bg colours */
+.bg-brand-color-brimary {background: var(--brand-color-primary);}
+.bg-brand-color-brimary-dark {background: var(--brand-color-primary-dark);}
+.bg-brand-color-brimary-light {background: var(--brand-color-primary-light);}
+.bg-brand-color-secondary {background: var(--brand-color-primary);}
+.bg-brand-color-secondary-dark {background: var(--brand-color-primary-dark);}
+.bg-brand-color-secondary-light {background: var(--brand-color-primary-light);}
+
+
+/* SITE WIDE */
+
+/* General */
+.container {width: 960px;padding: 0 90px;margin: 0 auto;}
+
+/* Site Header */
+.site-header {height: 90px;}
+	.site-logo {height: 35px;width: auto;padding:35px 0 20px;float: left;color: white;box-sizing: unset;}
+	.hamburger {height: 18px;width: auto;padding:36px 0 36px;float: right;color: white;text-decoration: none;}
+
+/* Page Header */
+.page-header {background: var(--brand-color-primary);height: 206px;box-shadow: inset 0 -1px 0 white;}
+	.page-title {color: white;font-size: 32px;line-height: 48px;padding-top: 24px;}
+.page-content {padding-top: 48px;}
+	.page-subtitle {font-size: 32px;margin-bottom: 24px;width: 75%;}
+	.para {line-height: 21px;margin-bottom: 42px;}
+
+/* Site Footer */
+.site-footer {height: 90px;}
