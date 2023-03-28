@@ -35,8 +35,8 @@
 *, *::before, *::after {box-sizing: border-box;}
 html {font-family: 'Montserrat', sans-serif;color: var(--dark-color);-webkit-text-size-adjust: none;text-size-adjust: none;}
 body {margin:0;}
-p
-h1, h2, h3, h4, h5
+p {font-size: 1rem}
+h1, h2, h3, h4, h5 {}
 menu, ol, ul {padding-left: 0;}
 menu:not(article menu), ol:not(article ol), ul:not(article ul) {list-style: none;}
 article ol, article ul {list-style-position: inside;}
@@ -57,6 +57,21 @@ label, button, select, summary, [type=radio], [type=submit], [type=checkbox] {cu
 .bg-brand-color-secondary {background: var(--brand-color-primary);}
 .bg-brand-color-secondary-dark {background: var(--brand-color-primary-dark);}
 .bg-brand-color-secondary-light {background: var(--brand-color-primary-light);}
+.m0 {margin: 0;}
+.m8 {margin: 8px;}
+.m16 {margin: 16px;}
+.m24 {margin: 24px;}
+.m36 {margin: 36px;}
+.mt0 {margin-top: 0;}
+.mt8 {margin-top: 8px;}
+.mt16 {margin-top: 16px;}
+.mt24 {margin-top: 24px;}
+.mt36 {margin-top: 36px;}
+.mb0 {margin-bottom: 0;}
+.mb8 {margin-bottom: 8px;}
+.mb16 {margin-bottom: 16px;}
+.mb24 {margin-bottom: 24px;}
+.mb36 {margin-bottom: 36px;}
 
 
 /* SITE WIDE */
@@ -66,15 +81,16 @@ label, button, select, summary, [type=radio], [type=submit], [type=checkbox] {cu
 
 /* Site Header */
 .site-header {height: 90px;}
-	.site-logo {height: 35px;width: auto;padding:35px 0 20px;float: left;color: white;box-sizing: unset;}
-	.hamburger {height: 18px;width: auto;padding:36px 0 36px;float: right;color: white;text-decoration: none;}
+  .site-header .container {display:flex;align-items:center;height:100%;}
+	.site-logo {height: 35px;width: auto;color: white;margin-right: auto;background: var(--brand-color-secondary-light);}
+	.hamburger {height: 18px;width: auto;color: white;text-decoration: none;}
 
 /* Page Header */
-.page-header {background: var(--brand-color-primary);height: 206px;box-shadow: inset 0 -1px 0 white;}
-	.page-title {color: white;font-size: 32px;line-height: 48px;padding-top: 24px;}
-.page-content {padding-top: 48px;}
-	.page-subtitle {font-size: 32px;margin-bottom: 24px;width: 75%;}
-	.para {line-height: 21px;margin-bottom: 42px;}
+.page-header {background: var(--brand-color-primary);}
+	.page-title {color: white;}
+.page-content {}
+	.page-subtitle {font-size: 32px;}
+	.para {}
 
 /* Site Footer */
 .site-footer {height: 90px;}
